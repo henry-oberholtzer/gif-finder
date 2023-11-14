@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gif Finder</title>
 </head>
 <body>
-    
+    <div class="container-sm m-4 border rounded p-5">
+        <form>
+            <input class="form-group" type="text" id="search-string" placeholder="Enter Query...">
+            <input type="checkbox" name="weird" class="form-control-group" id="weird"><label class="form-control-group">Get Weird?</label>
+            <button class="form-group btn btn-primary" type="submit">Find Gif</button>
+        </form>
+    </div>
+    <div class="container-sm m-4 border rounded p-5">
+        <p id="error"></p>
+        <div id="results">
+            
+        </div>
+    </div>
+    <img class="m-4" id="giphy" src="./assets/img/Poweredby_640px-White_HorizText.png">
 </body>
 </html>
