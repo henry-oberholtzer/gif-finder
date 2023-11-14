@@ -6,11 +6,23 @@
     <title>Gif Finder</title>
 </head>
 <body>
+    <div class="container-sm m-4 border rounded p-2 pl-5">
+        <h1>Giphy API Search</h1>
+    </div>
     <div class="container-sm m-4 border rounded p-5">
-        <form>
-            <input class="form-group" type="text" id="search-string" placeholder="Enter Query...">
-            <input type="checkbox" name="weird" class="form-control-group" id="weird"><label class="form-control-group">Get Weird?</label>
-            <button class="form-group btn btn-primary" type="submit">Find Gif</button>
+        <form class="row">
+            <div class="col-6">
+            <input class="form-control" type="text" id="search-string" placeholder="Enter Query...">
+            </div>
+            <div class="col">
+            <input type="checkbox" name="weird" id="weird"><label class="form-control-group"> Get Weird?</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" name="evil" id="evil"><label class="form-control-group"> Evil?</label>
+            </div>
+            <div class="col-3">
+                <button class="form-control btn btn-primary" type="submit">Find Gif</button>
+            </div>
         </form>
     </div>
     <div class="container-sm m-4 border rounded p-5">
