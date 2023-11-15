@@ -6,29 +6,33 @@
     <title>Gif Finder</title>
 </head>
 <body>
-    <div class="container-sm m-4 border rounded p-2 pl-5">
+    <div class="container-sm m-4 border rounded p-2 px-5">
         <h1>Giphy API Search</h1>
     </div>
     <div class="container-sm m-4 border rounded p-5">
         <form class="row">
-            <div class="col-6">
+            <div class="col-5">
             <input class="form-control" type="text" id="search-string" placeholder="Enter Query...">
             </div>
             <div class="col">
-            <input type="checkbox" name="weird" id="weird"><label class="form-control-group"> Get Weird?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="weird" id="weird"><label class="form-check-label"> Get Weird?</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="evil" id="evil"><label class="form-check-label"> Get Evil?</label>
+                </div>
             </div>
-            <div class="col">
-                <input type="checkbox" name="evil" id="evil"><label class="form-control-group"> Evil?</label>
-            </div>
-            <div class="col-3">
-                <button class="form-control btn btn-primary" type="submit">Find Gif</button>
+            <div class="col-5">
+                <button id="button" type="submit"><img src="./assets/img/retrivegifs.gif" id="flames-logo" class="img-fluid" alt="Retrieve Gif"></button>
             </div>
         </form>
     </div>
-    <div class="container-sm m-4 border rounded p-5">
-        <p id="error"></p>
-        <div id="results">
-            
+    <div id="result-div" class="hidden">
+        <div class="container-sm m-4 border rounded p-5">
+            <p id="error"></p>
+            <div id="results">
+                
+            </div>
         </div>
     </div>
     <img class="m-4" id="giphy" src="./assets/img/Poweredby_640px-White_HorizText.png">

@@ -14,7 +14,7 @@ export default function getGif(search, options, offset) {
         }
     };
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${searchString(search, options)}&limit=${limit}&offset=${offset}&rating=${rating}&lang=${lang}&bundle=messaging_non_clips`;
-    const weirdUrl = `https://api.giphy.com/v1/gifs/translate?api_key=${process.env.API_KEY}&s=${searchString(search, options)}&weirdness=5`;
+    const weirdUrl = `https://api.giphy.com/v1/gifs/translate?api_key=${process.env.API_KEY}&s=${searchString(search, options)}&weirdness=8`;
     request.addEventListener("loadend", function () {
         const response = JSON.parse(this.responseText);
         if (this.status === 200) {
